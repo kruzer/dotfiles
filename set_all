@@ -1,0 +1,23 @@
+#!/bin/sh
+rm ~/.bashrc
+ln -s ~/dotfiles/.bashrc ~/.bashrc
+
+# rm current vim if exists
+if [ -d ~/.vim ]; then
+	rm -rf ~/.vim
+	mkdir ~/.vim
+fi
+
+if [ -f ~/.vimrc ]; then
+	rm ~/.vimrc
+fi
+
+ln -s ~/dotfiles/.vimrc
+if [ ! -d ~/.vim/colors ]; then
+	mkdir ~/.vim/colors
+fi
+cp -v ~/dotfiles/colors/*.vim ~/.vim/colors
+
+
+/usr/bin/git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+vim +PluginInstall +qall
