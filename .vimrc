@@ -8,6 +8,8 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 "Plugin 'Valloric/YouCompleteMe'
 Plugin 'wikitopian/hardmode'
+" Typescript
+Plugin 'leafgarland/typescript-vim'
 call vundle#end()            " required
 filetype plugin indent on    " required
 " Brief help
@@ -19,7 +21,7 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 
 " Status Line:
-colorscheme mikey
+colorscheme apprentice
 set laststatus=2
 set statusline=
 set statusline+=%7*\[%n]                                  "buffernr
