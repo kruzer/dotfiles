@@ -6,3 +6,6 @@
 " qa	record marcro to register [a]
 " @a	exec macro from register [a]
 
+napis
+litera
+dotfiles/colors/mikey.vim

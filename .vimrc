@@ -21,7 +21,9 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 
 " Status Line:
-colorscheme apprentice
+"colorscheme apprentice
+set background=dark
+colorscheme fu
 set laststatus=2
 set statusline=
 set statusline+=%7*\[%n]                                  "buffernr
@@ -46,6 +48,8 @@ endfunction
 "
 " My Settings:
 syntax on
+" umożliwia zmiane bufora bez zapisu starego
+set hidden
 "set term=xterm-256color
 
 " Line Numbers:
