@@ -1,0 +1,5 @@
+#!/bin/sh
+rm ~/.bashrc
+ln -s ~/dotfiles/.bashrc ~/.bashrc
+rm ~/.vimrc
+ln -s ~/dotfiles/.vimrc
