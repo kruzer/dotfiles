@@ -5,7 +5,8 @@
 " insert mode: Ctrl-r a		paste from register [a]
 " qa	record marcro to register [a]
 " @a	exec macro from register [a]
-
+" "*yy	copy to Windows clipboard (works on msys)
+"
 netrw tree
 	v - vertical split file
 	t - open file in new tab
