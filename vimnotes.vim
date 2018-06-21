@@ -6,6 +6,7 @@
 " qa	record marcro to register [a]
 " @a	exec macro from register [a]
 
-napis
-litera
-dotfiles/colors/mikey.vim
+netrw tree
+	v - vertical split file
+	t - open file in new tab
+	<CR> - horizontal split

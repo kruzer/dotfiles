@@ -1,6 +1,13 @@
 #!/bin/sh
-rm ~/.bashrc
+if [ -f ~/.bashrc ]; then
+	rm ~/.bashrc
+fi
 ln -s ~/dotfiles/.bashrc ~/.bashrc
+
+if [ -f ~/.tmux.conf ]; then
+	rm ~/.tmux.conf
+fi
+ln -s ~/dotfiles/.tmux.conf ~/.tmux.conf
 
 # rm current vim if exists
 if [ -d ~/.vim ]; then
