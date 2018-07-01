@@ -80,3 +80,10 @@ let g:netrw_liststyle=3		" treeview
 let g:netrw_list_hide=netrw_gitignore#Hide()
 let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
 
+" TabStops
+" 'tabstop' changes the width of the TAB character, plain and simple.
+" 'shiftwidth' affects what happens when you press >>, << or ==. It also
+" affects how automatic indentation works.
+"
+set shiftwidth=2
+set tabstop=2
