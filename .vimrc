@@ -87,3 +87,10 @@ let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
 "
 set shiftwidth=2
 set tabstop=2
+set colorcolumn=81
+
+" automatycznie ustawione dla komentarzy git'a
+autocmd FileType gitcommit set textwidth=72
+autocmd FileType gitcommit set colorcolumn=73
+set list
+set listchars=tab:»\ ,trail:.,extends:\#,nbsp:.
