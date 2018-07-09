@@ -10,6 +10,8 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'wikitopian/hardmode'
 " Typescript
 Plugin 'leafgarland/typescript-vim'
+Plugin 'octol/vim-cpp-enhanced-highlight'
+
 call vundle#end()            " required
 filetype plugin indent on    " required
 " Brief help
