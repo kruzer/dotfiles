@@ -96,3 +96,5 @@ autocmd FileType gitcommit set textwidth=72
 autocmd FileType gitcommit set colorcolumn=73
 set list
 set listchars=tab:»\ ,trail:.,extends:\#,nbsp:.
+set hlsearch
+set incsearch
