@@ -98,3 +98,8 @@ set list
 set listchars=tab:»\ ,trail:.,extends:\#,nbsp:.
 set hlsearch
 set incsearch
+"set listchars=tab:>·,trail:~,extends:>,precedes:<
+"set listchars=tab:→\ ,eol:↲,nbsp:␣,trail:•,extends:⟩,precedes:⟨
+"set list
+"hi NonText ctermfg=16 guifg=#4a4a59
+"hi SpecialKey ctermfg=16 guifg=#4a4a59

@@ -118,3 +118,4 @@ if ! shopt -oq posix; then
 fi
 export AMDAPPSDKROOT="/home/mikey/AMDAPPSDK-3.0"
 export OPENCL_VENDOR_PATH="/home/mikey/AMDAPPSDK-3.0/etc/OpenCL/vendors/"
+export CTEST_OUTPUT_ON_FAILURE=1
