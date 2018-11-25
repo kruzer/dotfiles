@@ -76,11 +76,11 @@ set wildmenu
 "noremap j <NOP>
 " Tweaks for browsing
 "let g:netrw_banner=0	" disable banner
-let g:netrw_browse_split=4	" open in prior window
-let g:netrw_altv=1		" open split to the right
-let g:netrw_liststyle=3		" treeview
-let g:netrw_list_hide=netrw_gitignore#Hide()
-let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
+"let g:netrw_browse_split=4	" open in prior window
+"let g:netrw_altv=1		" open split to the right
+"let g:netrw_liststyle=3		" treeview
+"let g:netrw_list_hide=netrw_gitignore#Hide()
+"let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
 
 " TabStops
 " 'tabstop' changes the width of the TAB character, plain and simple.
@@ -89,17 +89,21 @@ let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
 "
 set shiftwidth=2
 set tabstop=2
-set colorcolumn=81
+"set colorcolumn=81
 
 " automatycznie ustawione dla komentarzy git'a
 autocmd FileType gitcommit set textwidth=72
 autocmd FileType gitcommit set colorcolumn=73
 set list
-set listchars=tab:»\ ,trail:.,extends:\#,nbsp:.
+"set listchars=tab:»\ ,trail:.,extends:\#,nbsp:.
 set hlsearch
 set incsearch
 "set listchars=tab:>·,trail:~,extends:>,precedes:<
-"set listchars=tab:→\ ,eol:↲,nbsp:␣,trail:•,extends:⟩,precedes:⟨
+set listchars=tab:→\ ,eol:↲,nbsp:␣,trail:•,extends:⟩,precedes:⟨
 "set list
-"hi NonText ctermfg=16 guifg=#4a4a59
-"hi SpecialKey ctermfg=16 guifg=#4a4a59
+hi NonText ctermfg=8 guifg=#4a4a59
+hi SpecialKey ctermfg=16 guifg=#4a4a59
+map <F9> :w<CR>:make -C build<CR>
+map <F10> :make test -C build<CR>
+map <F3> :resize +1<CR>
+map <F4> :resize -1<CR>
