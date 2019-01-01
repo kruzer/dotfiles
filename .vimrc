@@ -11,6 +11,14 @@ Plugin 'wikitopian/hardmode'
 " Typescript
 Plugin 'leafgarland/typescript-vim'
 Plugin 'octol/vim-cpp-enhanced-highlight'
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
+
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-k>"
+let g:UltiSnipsJumpBackwardTrigger="<c-j>"
+
+let g:UltiSnipsEditSplit="vertical"
 
 call vundle#end()            " required
 filetype plugin indent on    " required
