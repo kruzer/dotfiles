@@ -1,0 +1,17 @@
+Xft.dpi: 276
+Xft.autohint: 0
+Xft.lcdfilter:  lcddefault
+Xft.hintstyle:  hintfull
+Xft.hinting: 1
+Xft.antialias: 1
+Xft.rgba: rgb
+
+st.alpha: 240
+st.font: Lato-16;
+
+URxvt.depth: 32
+URxvt.background: [80]black
+URxvt.foreground: gray90
+URxvt.font: xft:Noto Sans Mono-8
+URxvt.transparent: 0
+URxvt.scrollBar: 0
