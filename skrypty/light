@@ -1,0 +1,12 @@
+#!/bin/sh
+if [[ $1 == "up" ]]; then
+	/usr/bin/xbacklight -ctrl acpi_video0 -inc 5
+	LEVEL=`/usr/bin/xbacklight -ctrl acpi_video0 -get`
+	/usr/bin/notify-send -t 300 -a "light" "brightness" "up to: $LEVEL"
+fi
+
+if [[ $1 == "down" ]]; then
+	/usr/bin/xbacklight -ctrl acpi_video0 -dec 5
+	LEVEL=`/usr/bin/xbacklight -ctrl acpi_video0 -get`
+	/usr/bin/notify-send -t 300 -a "light" "brightness" "down to: $LEVEL"
+fi
