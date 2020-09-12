@@ -13,6 +13,8 @@ ln -s ~/dotfiles/.tmux.conf ~/.tmux.conf
 if [ -d ~/.vim ]; then
 	rm -rf ~/.vim
 	mkdir ~/.vim
+	mkdir ~/.vim/tmp ~/.vim/colors
+	cp -v ~/dotfiles/colors/*.vim ~/.vim/colors
 fi
 
 if [ -f ~/.vimrc ]; then
@@ -20,11 +22,6 @@ if [ -f ~/.vimrc ]; then
 fi
 
 ln -s ~/dotfiles/.vimrc
-if [ ! -d ~/.vim/colors ]; then
-	mkdir ~/.vim/colors
-fi
-cp -v ~/dotfiles/colors/*.vim ~/.vim/colors
-
 
 /usr/bin/git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 vim +PluginInstall +qall
